@@ -1,0 +1,6 @@
+datasets
+trl
+transformers
+transformers[torch]
+accelerate -U
+fairscale
