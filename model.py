@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import math
 import torch
 import torch.nn as nn
@@ -19,8 +21,6 @@ class ModelArgs:
     ffn_dim_multiplier: Optional[float] = None
     norm_eps: float = 1e-5
 
-    # Needed for KV cache
-    max_batch_size: int = 8
     max_seq_len: int = 512
 
     device: str = "cpu" # Later we 
