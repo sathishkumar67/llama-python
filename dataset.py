@@ -10,7 +10,7 @@ from torch.nn.utils.rnn import pad_sequence
 class DataArgs:
     batch_size: int
     block_size: int
-    pad_token_id: int = 0
+    pad_token_id: int
 
 
 class TokenDataset(Dataset):
@@ -53,5 +53,3 @@ def collate_fn(batch):
     # Dynamically pad the sequences in the batch
     padded_batch = pad_sequence(batch, batch_first=True, padding_value=0)
     return padded_batch
-
-
