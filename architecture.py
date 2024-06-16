@@ -15,15 +15,14 @@ class ModelArgs:
     dim: int
     n_layers: int
     n_heads: int
-    n_kv_heads: Optional[int] # This should be half the n_heads
     vocab_size: int # Later set in the build method
-    multiple_of: int = 256
-    ffn_dim_multiplier: Optional[float] = None
-    norm_eps: float = 1e-5
-
     max_seq_len: int
-    
+    n_kv_heads: Optional[int] # This should be half the n_heads
+    ffn_dim_multiplier: Optional[float] = None
+    multiple_of: int = 256
+    norm_eps: float = 1e-5
     is_causal: bool = True
+
 
 
 
