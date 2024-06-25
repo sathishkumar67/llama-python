@@ -1,5 +1,13 @@
+os
+pickel
+pandas
+numpy
+dataclasses
+typing
 datasets
 trl
+torch
 transformers
 transformers[torch]
 accelerate -U
+lightning
